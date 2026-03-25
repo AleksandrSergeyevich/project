@@ -1,0 +1,220 @@
+.hidden {
+  display: none;
+}
+.comment-line {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.fb-comment__text-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.comment-block-input__input {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  flex: 0 1 70%;
+}
+.comment-block-input__button {
+  border: none;
+  font-weight: 500;
+  float: right;
+  cursor: pointer;
+  color: #365899;
+  padding: 10px;
+}
+
+.fb-post {
+  width: 100%;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+  font: 400 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.fb-comment__sort {
+  color: #365899;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.fb-comment__sort:hover {
+  text-decoration: underline;
+}
+
+.fb-comment__sort span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-position: -408px -270px;
+  background-repeat: no-repeat;
+}
+
+.fb-comment__avatar {
+  height: 34px;
+  width: 37px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 0 !important;
+  object-fit: cover;
+}
+
+.fb-comment__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+  -ms-flex-align: top;
+  align-items: top;
+  margin: 10px 0;
+}
+
+.fb-comment__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+.fb-comment__answer {
+  display: flex;
+  margin-top: 1.4rem;
+}
+.fb-comment__text {
+  /* max-width: 440px; */
+  width: 100%;
+  margin: 0;
+  padding: 8px 10px;
+  color: #1d2129;
+  background-color: #f2f3f5;
+  border-radius: 18px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.fb-comment__author {
+  font-weight: 600;
+  color: #365899;
+  text-decoration: none;
+}
+
+.fb-comment__author:hover {
+  /* text-decoration: underline; */
+}
+
+.fb-comment__react {
+  text-decoration: none;
+  color: #365899;
+}
+
+.fb-comment__react:after {
+  content: "·";
+  color: #606770;
+  padding: 3px;
+}
+
+.fb-comment__posted {
+  color: #606770;
+}
+
+.fb-comment__more {
+  color: #365899;
+  text-decoration: none;
+}
+
+.fb-comment__more:hover {
+  text-decoration: underline;
+}
+
+.fb-comment__like {
+  position: absolute;
+  bottom: 5;
+  right: 0;
+  height: 20px;
+  width: 44px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  color: #8d949e;
+  font-size: 11px;
+  font-weight: normal;
+  padding: 2px 1px 2px 2px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.fb-comment__like img {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  margin-right: 3px;
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .fb-post {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: none;
+  }
+  .fb-comment__text {
+    max-width: 100%;
+  }
+}
+img {
+  padding: 0 !important;
+}
+
+.btn_comm {
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .comment-block-input__input {
+    flex: 0 1 100%;
+  }
+
+  .fb-comment__like {
+    bottom: -10px;
+    right: -6px;
+  }
+}
+/*==============CAROUSEL==============*/
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+
+/* Hide the images by default */
+
+/* Next & previous buttons */
+
+/* Position the "next button" to the right */
+
+/* On hover, add a black background color with a little bit see-through */
+
+/* Caption text */
+
+/* Number text (1/3 etc) */
+
+/* The dots/bullets/indicators */
+
+/* Fading animation */

@@ -1,0 +1,48 @@
+@font-face {
+    font-display:swap;
+    src: url('../fonts/MarrSans-Regular-Web.woff2') format('woff2');
+    font-family: 'MarrSans';
+    font-weight: 400;
+    font-style:normal;
+}
+
+@font-face {
+    font-display:swap;
+    src: url('../fonts/MarrSans-Medium-Web.woff2') format('woff2');
+    font-family: 'MarrSans';
+    font-weight: 600;
+    font-style:normal;
+}
+
+@font-face {
+    font-display:swap;
+    src: url('../fonts/MarrSansCondensed-Medium-Web.woff2') format('woff2');
+    font-family: 'MarrSansCondensed';
+    font-weight: 600;
+    font-style:normal;
+}
+
+@font-face {
+    font-display:swap;
+    src: url('../fonts/TheAntiquaB-LeMonde.woff2') format('woff2');
+    font-family: 'The Antiqua B';
+    font-weight: 500;
+    font-style:normal;
+}
+
+@font-face {
+    font-display:swap;
+    src: url('../fonts/TheAntiquaB-LeMonde-Italic.woff2') format('woff2');
+    font-family: 'The Antiqua B';
+    font-weight: 500;
+    font-style:italic;
+}
+
+
+@font-face {
+    font-display: swap;
+    src: url('../fonts/d-din_condensed_bold.woff2') format('woff2');
+    font-family: 'D-DIN Condensed';
+    font-weight: 700;
+    font-style:normal;
+}

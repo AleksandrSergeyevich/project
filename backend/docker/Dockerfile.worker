@@ -1,0 +1,23 @@
+FROM golang:1.24-alpine AS builder
+
+WORKDIR /app
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY . .
+
+RUN go build -o worker ./cmd/worker
+
+FROM alpine:3.20
+
+# Устанавливаем docker CLI чтобы worker мог запускать контейнеры
+RUN apk add --no-cache docker-cli
+
+WORKDIR /root/
+RUN mkdir -p /root/uploads /root/tmp
+
+COPY --from=builder /app/worker .
+COPY --from=builder /app/migrations ./migrations
+
+CMD ["./worker"]

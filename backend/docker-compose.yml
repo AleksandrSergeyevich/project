@@ -1,0 +1,55 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: app-db
+    environment:
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: testpass
+      POSTGRES_DB: testresults
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./migrations:/migrations
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: app-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.app
+    container_name: app-api
+    volumes:
+      - ./uploads:/root/uploads
+    depends_on:
+      - db
+      - rabbitmq
+    ports:
+      - "8080:8080"
+    environment:
+      DB_DSN: postgres://testuser:testpass@db:5432/testresults?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    container_name: app-worker
+    volumes:
+      - ./uploads:/root/uploads
+    depends_on:
+      - db
+      - rabbitmq
+    environment:
+      DB_DSN: postgres://testuser:testpass@db:5432/testresults?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+
+volumes:
+  db_data:

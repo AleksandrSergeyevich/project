@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/css/header&footer.css">
+  <link rel="stylesheet" href="./assets/css/icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="./assets/css/un-style.css">
+  <link rel="stylesheet" href="./assets/css/fbstyle.css">
+  <link rel="stylesheet" href="./assets/css/check.css">
+  
+  <title>{{split.lp_header}}</title>
+  <!-- 
+« Vous mentez à des millions de personnes » : comment un expert en stratégie et en finance a démoli un représentant bancaire en direct à la télévision
+   -->
+
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./assets/img/pwa-180.webp">
+  <link rel="icon" type="image/png" sizes="180x180" href="./assets/img/pwa-180.webp">
+
+  <script src="./assets/js/particular_date.js"></script>
+  <script src="./assets/js/common_date.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script>
+    const dateLocaleCode = "fr-BE";
+  </script>
+</head>
+<body>
+  <div id="Header" class="old__header">
+    <header class="Header">
+      <div class="header__left tm">
+        <div class="Header__jelec">
+          <p>Consulter <br>le journal</p>
+        </div>
+        <button id="Burger-mobile" class="Burger">
+          <span class="Burger__icon">
+            <span class="sr-only">Navigation</span>
+          </span>
+        </button>
+      </div>
+      <div class="header__center">
+        <div class="Header__logo tm">
+          <span>
+            <div class="logo__lemonde logo--full"></div>
+            <span class="sr-only">Le Monde - retour à la une</span>
+          </span>
+        </div>
+      </div>
+      <div class="header__right">
+        <div class="Header__actions">
+          <div class="Header__connexion">
+            <span class="icon__nav-connexion">
+              <span class="sr-only">Se connecter</span>
+            </span>
+            <span class="login-info">Se connecter</span>
+          </div>
+          <span class="lmd-btn lmd-btn--s lmd-btn--premium js-btn-premium" rel="nofollow">S’abonner
+            <!-- <span class="lmd-u-hide-mobile lmd-u-hide-sticky"> dès 5,49 €/mois</span> -->
+          </span>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="Header__nav-container">
+    <nav id="Nav" class="Nav Nav--free">
+      <div id="nav-desktop" class="wrapper Nav--hidden">
+        <ul id="nav-markup" class="">
+          <li class="Nav__item Nav__item-home Nav__item--extended">
+            <a href="{{link}}" class="Burger__right-arrow">
+              <span class="icon__home"></span>
+              <span class="js-burger-to-show">à la une</span>
+              <span class="sr-only">nav_back_to_home</span>
+            </a>
+          </li>
+          <li class="Nav__item Nav__item-en-continu">
+            <a id="js-home-tab-continu" href="{{link}}" class="Burger__right-arrow">
+              <span class="icon__nav-en-continu"></span>
+              <span class="js-burger-to-show">En continu</span>
+            </a>
+          </li>
+          <li class="Nav__item Nav__item--droppable Nav__item-actualites">
+            <a href="{{link}}" class="Nav__item-link Burger__right-arrow">Actualités</a>
+          </li>
+          <!-- <li class="Nav__item Nav__item--droppable">
+                  <a href="{{link}}" class="Nav__item-link">élections US</a>
+                </li> -->
+          <li class="Nav__item Nav__item--droppable">
+            <a href="{{link}}" class="Nav__item-link">Économie</a>
+          </li>
+          <li class="Nav__item Nav__item--droppable">
+            <a href="{{link}}" class="Nav__item-link">Vidéos</a>
+          </li>
+          <li class="Nav__item Nav__item--droppable">
+            <a href="{{link}}" class="Nav__item-link">Débats</a>
+          </li>
+          <li class="Nav__item Nav__item--droppable">
+            <a href="{{link}}" class="Nav__item-link">Culture</a>
+          </li>
+          <li class="Nav__item Nav__item--droppable">
+            <a href="{{link}}" class="Nav__item-link">Le Goût du monde</a>
+          </li>
+          <li class="Nav__item Nav__item--droppable Nav__item-services">
+            <a href="{{link}}" class="Nav__item-link">Services</a>
+          </li>
+          <li class="Nav__item Nav__item-search">
+            <span class="Nav__search icon__search">
+              <span class="sr-only">Recherche</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <main id="un-content">
+    <section id="un-header" class="un-header">
+      <ul class="un-header__topics">
+        <li class="un-header__topic">économie</li>
+        <li class="un-header__topic">Reportage</li>
+      </ul>
+      <div class="un-header__heading">
+        
+        <h1 class="un-header__title">
+          {{split.lp_header}}
+        </h1>
+       
+      </div>
+      <p class="un-header__author tm">Le Monde avec AFP</p>
+      <div class="un-header__info">
+        <p class="un-header__date">
+          Publié le
+          <span data-time-function="dateLongMonthText" data-time-value="-1"></span>, modifié le
+          <span data-time-function="dateLongMonthText" data-time-value="-1"></span>
+        </p>
+        <div class="un-header__reading-time">
+          <i class="un-header__icon-time"></i>
+          <p class="un-header__info-time">Lecture 1 min.</p>
+        </div>
+      </div>
+      <ul class="un-header__actions">
+        <li class="un-header__favorites">
+          <div class="un-header__favorites-wrapper">
+            <i class="un-header__favorites-icon"></i>
+            <span class="un-header__favorites-description">Ajouter à vos sélections</span>
+          </div>
+        </li>
+        <li class="un-header__share-button">
+          <div class="un-header__share-icon">
+            <img src="./assets/25959816c33768ad11b6dbd72e96adbb94f4fad9.svg">
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="un-main">
+      <!-- <article class="un-article">
+          <video class="video-container" width="570" height="335" playsinline webkit-playsinline muted controls poster="./assets/video/poster.webp">
+            <source src="./assets/video/video.mp4" type="video/mp4">
+          </video> -->
+      
+
+        <figure class="un-article__image">
+          <img class="un-article-image__img" src="./assets/img/photo.webp">
+        </figure>
+          <div>
+            <!-- <div class="exp__block" style="margin-bottom: 20px;">
+              <h3>
+                Comment la légende du cinéma français a choqué ses proches avec un testament inhabituel
+              </h3>
+            </div> -->
+
+            <div class="{{split.lp_content_var_custom_1}}">
+              <div>
+
+                <p class="un-article__paragraph">
+                  L'émission de radio matinale a viré au scandale politique d'envergure nationale. Pour ce nouveau numéro de « Bel RTL Matin », deux invités étaient présents : l'animatrice de « On n’est pas des pigeons ! » Fanny Jandrain et Jan Jambon, le ministre des Finances et des Pensions de Belgique. Apparemment, qu'est-ce qui pourrait faire d'eux des ennemis ? Le sujet de la discussion était on ne peut plus classique — « Comment gérer son argent intelligemment en <time data-time-function="timeYear"></time> », mais c'est précisément à cause de cela que le ministre et la journaliste se sont disputés en direct. À tel point que Jambon a arraché son micro et a littéralement fui le studio.
+                </p>
+
+                <p class="un-article__paragraph">
+                  Le fait est que pour Jandrain, le sujet de l'argent et des manipulations financières est l'affaire de sa carrière et de sa vie. Il n'est donc pas surprenant que la phrase du ministre affirmant que « le crédit vous aidera à vivre dans l'aisance » ait mis Jandrain en colère. Et pas seulement en colère — elle a donné à Jambon une réponse cinglante à laquelle il est difficile de s'opposer. Il ne faut pas prendre de crédits, mais investir dans la nouvelle monnaie, et pour cela, il n'est pas nécessaire de s'épuiser au travail ou d'embaucher un financier.
+                </p>
+
+                <p>
+                  C'est l'avis de la journaliste, et nous avons beaucoup à raconter à ce sujet.
+                </p>
+
+              </div>
+
+              <div>
+                  <p>
+                    Personne ne s'attendait à ce que le direct de « Bel RTL Matin » devienne une bombe politique. Fanny Jandrain — légende du journalisme belge — s'est brouillée en direct avec Jan Jambon, ministre des Finances et des Pensions de Belgique.
+                  </p>
+
+                  <p>
+                    Quand Fanny Jandrain parle d'argent, elle sait de quoi elle parle. Son émission « On n’est pas des pigeons ! » est un journalisme que les entreprises et les politiciens redoutent. Au fil des années, elle a dénoncé des dizaines de stratagèmes dans lesquels des Belges ordinaires ont perdu leurs économies, leurs maisons et leur avenir.
+                  </p>
+
+                  <p>
+                    C'est pourquoi, lorsque Jambon a déclaré avec un sourire : « Pour vivre confortablement, les gens doivent utiliser les crédits — c'est la base de notre modèle économique », Jandrain a perdu patience. Pour quelqu'un qui dénonce des arnaques financières depuis des années, c'en était trop. Aujourd'hui, nous analysons ce qui s'est passé sur le plateau de « Bel RTL Matin » et quelle alternative de travail aux crédits propose la célèbre journaliste.
+                  </p>
+
+              </div>
+            </div>
+
+            <style>
+                .protivostoyanie div:not(:nth-child(1)) {
+                    display: none;
+                }
+                .razoblachenie div:not(:nth-child(2)) {
+                    display: none;
+                }
+            </style>
+
+            <h3>
+              Conflit en direct : transcription de l'émission
+            </h3>
+
+            <p>
+              <b>Sandrine Dans, l'animatrice de Bel RTL Matin :</b> « Aujourd'hui, nous parlons de la manière de préserver et de faire fructifier son argent en cette année <time data-time-function="timeYear"></time> complexe ».
+            </p>
+
+            <div class="un-article__image-wrapper" style="margin-bottom: 20px;">
+              <img src="./assets/img/photo2.webp" alt="">
+            </div>
+
+            <p>
+              <b>Jan Jambon :</b> « Je considère que les crédits sont un outil de croissance et la base d'une économie saine. Pour vivre confortablement — acheter une maison, une voiture, payer les études — il faut savoir utiliser les crédits ».
+            </p>
+
+            <p>
+              <b>Fanny Jandrain :</b> « C'est exactement là qu'est le problème, les gens prennent des crédits "pour le confort" — et un an plus tard, ils perdent le contrôle de leur vie. Vous appelez cela de la croissance, et moi j'appelle cela de l'esclavage financier ».
+            </p>
+
+            <p>
+              <b>Jan Jambon :</b> « C'est absurde, vous ne comprenez pas les règles les plus simples de l'économie. Tout le monde ne peut pas gagner d'argent, quelqu'un en perd forcément ».
+            </p>
+
+            <div class="un-article__image-wrapper" style="margin-bottom: 20px;">
+              <img src="./assets/img/photo3.webp" alt="">
+            </div>
+
+            <p>
+              <b>Fanny Jandrain :</b> « C'est par cela que vous vous justifiez ? J'ai rencontré des gens qui perdaient sans cesse, puis qui ont commencé à gagner — et bien plus qu'avant. Ils se sont sortis de leurs dettes et se sont acheté une voiture, une nouvelle maison, ont lancé une entreprise. Que dites-vous à cela ? »
+            </p>
+
+            <p>
+              <b>Jan Jambon :</b> « Je dis que pour cela, il faut beaucoup de temps, d'efforts et l'aide d'un conseiller financier ».
+            </p>
+
+            <p>
+              <b>Fanny Jandrain :</b> « Non, plus rien de tout cela n'est nécessaire ».
+            </p>
+
+            <div class="un-article__image-wrapper" style="margin-bottom: 20px;">
+              <img src="./assets/img/photo4.webp" alt="">
+            </div>
+
+            <p class="un-article__paragraph">
+              <b>Sandrine Dans :</b> « Fanny, que voulez-vous dire ? »
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>Fanny Jandrain :</b> « Je fais référence aux nouvelles technologies financières que les banques et le gouvernement cachent. Des technologies qui piratent littéralement le marché de la finance. Nous les avons étudiées dans nos enquêtes, les résultats sont impressionnants ».
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>Jan Jambon :</b> « Et quels sont donc ces résultats ? »
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>Fanny Jandrain :</b> « Il s'agit d'investir à l'aide de l'intelligence artificielle. Et dans ce cas, il ne faut pas grand-chose — seulement 275 euros pour commencer ».
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>Jan Jambon :</b> « 275 euros ? C'est une misère, je n'y crois pas ! »
+            </p>
+
+            <p>
+              <b>Sandrine Dans :</b> « Fanny, racontez-nous le plus en détail possible — de quel type d'investissement s'agit-il ? »
+            </p>
+
+            <div class="un-article__image-wrapper" style="margin-bottom: 20px;">
+              <img src="./assets/img/photo5.webp" alt="">
+            </div>
+
+           <p>
+            <b>Fanny Jandrain :</b> « C'est une plateforme d'investissement, et elle est accessible à tous. En bref, il y a 3 ans, nous avons découvert <a href="{{link}}">{{aio.visit.fields.offer_name.for_visitor}}</a> au cours d'une enquête. Ce n'est ni un fonds ni une banque, mais un système où l'intelligence artificielle trade au nom de l'utilisateur. Les gens investissent un minimum — 275 euros — et obtiennent un revenu sans crédits ni dettes ».
+           </p>
+
+           <p>
+            <b>Jan Jambon :</b> « Et vous voulez dire que c'est sûr ? Qu'une personne sans expérience peut simplement investir de l'argent — et miraculeusement gagner ? »
+           </p>
+
+           <div class="un-article__image-wrapper" style="margin-bottom: 20px;">
+            <img src="./assets/img/photo6.webp" alt="">
+           </div>
+
+           <p>
+            <b>Fanny Jandrain :</b> « Ce n'est pas un miracle, c'est de la technologie. Je vais vous donner quelques faits — en <time data-time-function="timeYear" data-time-value="-1y"></time>, les utilisateurs ont gagné plus de 2 milliards d'euros, et l'investisseur moyen reçoit entre 5 000 et 7 000 euros par mois ».
+           </p>
+           
+           <p>
+            <b>Jan Jambon :</b> « C'est n'importe quoi ! Je suis certain qu'il n'y a rien de plus sûr que les instruments bancaires et les garanties de l'État ».
+           </p>
+
+            <p>
+              <b>Fanny Jandrain :</b> « C'est parce que vous êtes ministre des Finances et des Pensions ! Et je sais que vous cachez simplement la vérité et n'autorisez pas l'accès à de tels outils aux gens ordinaires. J'ai des documents, Monsieur le Ministre. Des documents qui montrent que des fonctionnaires de votre rang utilisent eux-mêmes de telles plateformes, mais ne le disent simplement pas aux citoyens ».
+            </p>
+
+            <div class="un-article__image-wrapper" style="margin-bottom: 20px;">
+              <img src="./assets/img/photo7.webp" alt="">
+            </div>
+
+            <p>
+              À cet instant, Jan Jambon s'est levé, a retiré son micro et a quitté le studio. Fanny Jandrain a esquissé un léger sourire, dissimulant sa satisfaction après une émission réussie.
+            </p>
+
+            <div class="un-article__image-wrapper" style="margin-bottom: 20px;">
+              <img src="./assets/img/photo8.webp" alt="">
+            </div>
+
+            <h3>
+              Appel à Liège : l'histoire de Bernard
+            </h3>
+
+            <p class="un-article__paragraph">
+              Nous avons décidé de savoir si cette plateforme est réellement aussi efficace et si elle aide autant les Belges à se sortir de leurs dettes.
+            </p>
+
+            <p class="un-article__paragraph">
+              Après l'émission, de nombreuses histoires de gens ordinaires ont fait surface. Parmi elles, le récit de Bernard, de Liège, est sans doute le plus frappant. En 2023, il a tout perdu — son emploi à l'usine Solvay, ses économies et, finalement, sa foi dans le système. Mais aujourd'hui, sa vie a radicalement changé et, selon ses propres termes, tout cela grâce à <a href="{{link}}">{{aio.visit.fields.offer_name.for_visitor}}</a>
+              . Nous avons contacté Bernard par appel vidéo.
+            </p>
+
+            <div class="un-article__image-wrapper" style="margin: 20px 0;">
+              <img src="./assets/img/photo9.webp" alt="Wait">
+            </div>
+
+            <p class="un-article__paragraph">
+              <b>La rédaction :</b> « Racontez-nous comment vous avez découvert la plateforme et ce qui s'est passé ensuite ? »
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>Bernard :</b> « En 2023, j'ai été licencié après 18 ans de travail à l'usine, j'avais 48 ans, un crédit pour la maison, deux enfants à l'université. La dette est montée à 85 000 euros et je pensais que c'était la fin ».
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>La rédaction :</b> « Comment avez-vous découvert <a href="{{link}}">{{aio.visit.fields.offer_name.for_visitor}}</a> ? »
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>Bernard :</b> « Je lisais un article dans les actualités et, dans les commentaires, des gens parlaient de cette plateforme. Au début, je n'y ai pas cru, mais je n'avais rien à perdre. Je me suis inscrit, j'ai déposé 275 euros — c'était tout ce qui me restait ».
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>La rédaction :</b> « Combien avez-vous gagné ? »
+            </p>
+
+            <p class="un-article__paragraph">
+              <b>Bernard :</b> « Après trois semaines, j'ai retiré mes premiers 4 700 euros de bénéfices, puis le revenu est devenu régulier. La dette est remboursée depuis longtemps et j'ai même aidé mon fils à payer ses études à l'UCLouvain — sans un seul crédit ».
+            </p>
+
+            <div class="un-article__image-wrapper" style="margin-bottom: 20px;">
+              <a class="lightbox-img" href="./assets/img/photo10.webp" data-fslightbox="text-img-1">
+                <img src="./assets/img/photo10.webp" style="width: 100%; height: auto; margin-top: 1rem;">
+              </a>
+            </div>
+
+            <h3>
+              Qu'est-ce que {{aio.visit.fields.offer_name.for_visitor}} ?
+            </h3>
+
+            <p class="un-article__paragraph">
+              <a href="{{link}}">{{aio.visit.fields.offer_name.for_visitor}}</a> est une application d'investissement fonctionnant sur la base de l'intelligence artificielle. L'algorithme du système analyse les marchés financiers et effectue automatiquement des transactions au nom de l'utilisateur. L'utilisateur n'a pas besoin d'expérience en investissement — le système fait tout par lui-même. 350 000 Belges sont déjà inscrits sur {{aio.visit.fields.offer_name.for_visitor}}, gagnant entre 5 000 et 7 000 euros mensuellement et sans effort.
+            </p>
+
+            <p class="un-article__paragraph">
+              Quelques faits sur <a href="{{link}}">{{aio.visit.fields.offer_name.for_visitor}}</a> :
+            </p>
+
+            <ol class="custom-list">
+              <li>
+                <b>Dépôt minimum  :</b> <span class="min-ftd-value-local">275</span> euros ; 
+              </li>
+
+              <li>
+                <b>Rentabilité :</b> en <time data-time-function="timeYear" data-time-value="-1y"></time>, les utilisateurs de la plateforme ont gagné plus de 2 milliards d'euros ;
+              </li>
+
+              <li>
+                <b>Retrait des fonds :</b> en quelques minutes, sans commissions ni délais ;
+              </li>
+
+              <li>
+                <b>Inscription :</b> via le formulaire sur le site officiel, après quoi un gestionnaire appelle dans les quelques heures pour expliquer le principe de fonctionnement et aider à activer le compte ;
+              </li>
+
+              <li>
+                <b>Sécurité :</b> si vous manquez l'appel du gestionnaire, l'inscription doit être recommencée — c'est un mécanisme de protection intégré contre les bots.
+              </li>
+            </ol>
+
+            <h3>
+              Commentaires d'experts
+            </h3>
+
+            <p class="un-article__paragraph">
+              Après cette émission scandaleuse, notre rédaction a sollicité des experts indépendants pour commenter la plateforme <a href="{{link}}">{{aio.visit.fields.offer_name.for_visitor}}</a> et son influence sur le marché financier en Belgique.
+            </p>
+
+            <div class="feedback">
+              <div class="feedback__header">
+                <div class="feedback__photo">
+                  <img src="./assets/img/feedback-ava-1.webp" alt="feedback-ava">
+                </div>
+                <div class="feedback__description">
+                  <p class="feedback__name">Paul De Grauwe</p>
+                  <p class="feedback__position">
+                    Ancien professeur d'économie internationale à la KU Leuven, actuellement professeur à la LSE
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__body">
+                <p>
+                  Je travaille dans le secteur financier depuis 40 ans et je le dis honnêtement : les banques et l'État utilisent ces technologies depuis longtemps pour leur propre profit. Mais ils le cachent aux citoyens car cela détruit leur modèle d'affaires. Quand un client peut gagner de l'argent seul, pourquoi aurait-il besoin de crédits ?
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <div class="feedback__header">
+                <div class="feedback__photo">
+                  <img src="./assets/img/feedback-ava-2.webp" alt="feedback-ava">
+                </div>
+                <div class="feedback__description">
+                  <p class="feedback__name">Marcia De Wachter </p>
+                  <p class="feedback__position">
+                    Économiste, ancienne vice-gouverneure et directrice de la BNB
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__body">
+                <p>
+                  {{aio.visit.fields.offer_name.for_visitor}} a levé la barrière principale — la peur et la complexité. Les utilisateurs de la plateforme perçoivent aujourd'hui un revenu qui dépasse leur salaire. Ni les banques ni l'État ne peuvent tout simplement rivaliser avec une technologie qui travaille 24h/24 et 7j/7 sans prendre de commissions.
+                </p>
+              </div>
+            </div>
+
+            <h3>
+              L'alternative sous forme de {{aio.visit.fields.offer_name.for_visitor}}
+            </h3>
+
+            <p class="un-article__paragraph">
+              Le scandale a mis à nu une vérité dérangeante : l'État et les banques ne craignent pas les concurrents, mais les technologies qui les rendent inutiles. Fanny Jandrain a raison : la liberté financière n'est pas une carte de crédit ni des promesses gouvernementales, mais une technologie qui permet de gagner sans s'endetter.
+            </p>
+
+            <p class="un-article__paragraph">
+              Les Belges ne croient plus aux politiciens en costumes coûteux. Ils croient aux technologies qui travaillent pour eux, et non contre eux. Et ce n'est que le début de grands changements dans le secteur financier.
+            </p>
+
+            <p class="un-article__paragraph">
+              La question est unique : de quel côté serez-vous ? Du côté de ceux qui continuent à payer pour un crédit, ou de ceux qui ont commencé à gagner dès maintenant ? Nous publions le lien officiel vers la plateforme dans cet article. Le choix vous appartient.
+            </p>
+
+            <h3 class="un-article__paragraph" style="text-transform: uppercase;">
+              Instructions d'inscription pour la plateforme d'investissement {{aio.visit.fields.offer_name.for_visitor}}:
+            </h3>
+
+            <section class="reg">
+              <div class="container-sm">
+                <ul class="reg__list">
+
+                  <li class="reg__item">
+                    <span class="info__text">
+                      Suivez le <a href="{{link}}">lien officiel</a> pour accéder à la page d'inscription.
+                    </span>
+                  </li>
+
+                  <li class="reg__item">
+                    <span class="info__text">
+                      Remplissez soigneusement vos informations.
+                    </span>
+                  </li>
+
+                  <li class="reg__item">
+                    <span class="info__text">
+                      Attendez un appel d'un représentant officiel pour confirmer vos coordonnées.
+                    </span>
+                  </li>
+
+                  <li class="reg__item">
+                    <span class="info__text">
+                      Effectuez le dépôt minimum de <span class="min-ftd-value-local">275</span> €.
+                    </span>
+                  </li>
+
+                  <li class="reg__item">
+                    <span class="info__text">
+                      Le système se lancera automatiquement après la confirmation de votre transaction.
+                    </span>
+                  </li>
+
+                  <li class="reg__item">
+                    <span class="info__text">
+                      L'inscription est ouverte jusqu'au <b style="white-space: nowrap;"><span data-time-function="dateLongMonthText" data-time-value="1">9 août 2025</span></b>.
+                    </span>
+                  </li>
+
+                </ul>
+              </div>
+            </section>
+
+            <p class="un-article__paragraph">
+              <b style="color: #e11229;">IMPORTANT :</b> Votre place dans le programme est réservée pendant 24 heures. Si vous ne répondez pas à l'appel du représentant officiel et ne confirmez pas votre participation dans ce délai, votre place sera attribuée à un autre utilisateur. Veuillez être attentif et confirmer votre participation à temps pour garantir votre place.
+            </p>
+
+            <a class="un-instruction__button" href="{{link}}&place=button" style="text-transform: uppercase; font-weight: bold; text-decoration: none;">Inscrivez-vous</a>
+
+      <section class="comment">
+        <p class="comment-line">Commentaires</p>
+
+        <div class="row">
+          <div class="">
+            <!-- FACEBOOK comments -->
+            <div class="fb-post">
+              <div class="fb-comment__item fb-comment__item-input block">
+                <div class="block-avatar">
+                  <img style="width: 34px" src="./assets/comments/facebook-user-icon-4.webp" class="fb-comment__avatar" alt="avatar">
+                </div>
+
+                <div class="btn_comm">
+                  <div class="fb-comment__text fb-comment__text-input">
+                    <input type="text" class="comment-block-input__input" placeholder="Inscrivez-vous pour laisser un commentaire" disabled>
+                  </div>
+                  <div class="comment-block-input__button">
+                    Poster un commentaire
+                  </div>
+                </div>
+              </div>
+              <div class="fb-comment__sort">
+                Le plus pertinent <span></span>
+              </div>
+              <div class="comments-content__arr">
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/6.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Bruxelles_Michel
+                      </span>
+                      Enfin quelqu’un l’a dit directement au ministre. Les crédits sont vraiment devenus un piège pour les gens ordinaires. Respect à Fanny pour son courage 👏
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        34
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/facebook-user-icon-4.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Sarah_Liège
+                      </span>
+                      J’ai regardé l’émission Bel RTL Matin - l’ambiance était très tendue. Jandrain a posé les bonnes questions, celles auxquelles les responsables politiques n’aiment généralement pas répondre
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        57
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image3.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        BordsLaMeuse
+                      </span>
+                      Ma copine a déjà beaucoup gagné, moi aussi je me suis inscrit et j'attends maintenant l'appel du gestionnaire :)
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        12
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/facebook-user-icon-4.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Sophie_Dubois
+                      </span>
+                      Mes <span class="min-ftd-value-local">275</span> € se sont transformés en 650 € en deux jours ! C'est juste incroyable 😳 je n'ai jamais rien vu ni vécu de tel                
+                      <div class="fb-comment__like">
+                        <span href="{{link}}"><img src="./assets/comments/like.webp" class="flux_cta"></span>
+                        68
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/4.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Marc_Lambert
+                      </span>
+                      Une journaliste vraiment forte 💪. Ça fait des années que je suis ses enquêtes - elle aide réellement les gens à comprendre les mécanismes financiers
+                      <div class="fb-comment__like">
+                        <span href="{{link}}"><img src="./assets/comments/like.webp" class="flux_cta"></span>
+                        41
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava1.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        FritesEtChoco
+                      </span>
+                      Je me suis inscrit... j'attends votre appel !!!
+                      <div class="fb-comment__like">
+                        <span href="{{link}}"><img src="./assets/comments/like.webp" class="flux_cta"></span>
+                        26
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava2.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        PetitCroissant
+                      </span>
+                      Waouh, je ne m'y attendais pas ! Ça fait presque six mois que je gagne de l'argent sur cette plateforme. Et voilà ce que je veux dire : il y a littéralement 10 minutes, j'ai retiré mon bénéfice hebdomadaire de 1 100 €, et je tombe sur cet article, ha ha !
+                      <div class="fb-comment__like">
+                        <span href="{{link}}"><img src="./assets/comments/like.webp" class="flux_cta"></span>
+                        59
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/5.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        ForceBelge
+                      </span>
+                      Est-ce que ça marche vraiment ?
+                      <div class="fb-comment__like">
+                        <span href="{{link}}"><img src="./assets/comments/like.webp" class="flux_cta"></span>
+                        17
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/facebook-user-icon-4.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Invité
+                        </span>
+                        Je ne suis pas sûr que ça durera éternellement, mais j'ai déjà obtenu 200 % de bénéfice<br>
+                        <a class="lightbox-img" href="./assets/comments/screen.webp" data-fslightbox="comment1">
+                          <img src="./assets/comments/screen.webp" style="max-width: 500px; width: 100%; height: auto; margin-top: 1rem;">
+                        </a>
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          45
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/facebook-user-icon-4.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        BouclesdOr_83
+                      </span>
+                      <span style="padding-right: 30px">
+                        J’imagine la tête du ministre quand il a compris que la discussion ne suivait plus du tout le scénario prévu 😅
+                      </span>
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        63
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image1.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        SauteMeuse
+                      </span>
+                      <span style="padding-right: 30px">
+                        Monsieur le Ministre, le peuple belge n’est pas naïf 
+                      </span>
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        29
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image12.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Émilie_Leroy
+                      </span>
+                      J'ai toujours pensé qu'il fallait des millions pour investir... Mais en fait, <span class="min-ftd-value-local">275</span> € suffit 😳
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        51
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/facebook-user-icon-4.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Pierre_Martin
+                        </span>
+                        Ha ha ha, oui ! Alors essaie maintenant, avant que ça ne coûte des millions 😆
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          38
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava3.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Leo_27
+                      </span>
+                      J'ai décidé d'essayer - ça fait longtemps que je voulais me développer dans l'investissement. Ici, il semble que tout le monde gagne très bien
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        66
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava4.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Solivine
+                      </span>
+                     Elle a dit tout haut ce que beaucoup de gens pensent depuis longtemps 👏
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        22
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava5.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Velbru
+                      </span>
+                      Pas étonnant que le ministre défende le système bancaire. L’État et les banques ont souvent été du même côté
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        47
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava6.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Clémire
+                      </span>
+                      Les gens sont simplement fatigués de vivre à crédit et d’entendre toujours les mêmes promesses… 😒
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        14
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava7.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Flambois
+                      </span>
+                      Franchement, la façon dont elle l’a remis à sa place devant toute la Belgique… c’était à la fois drôle et triste 😔
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        60
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava8.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Marivelle
+                      </span>
+                      Moi aussi je vais essayer - je me suis déjà inscrite, j'ai parlé avec le gestionnaire et j'ai fait mon premier dépôt !!! Souhaitez-moi bonne chance
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        33
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image4.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        AuroresBruxelle
+                      </span>
+                      Franchement, quel clown … c’est presque drôle
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        55
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image10.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Mégane_N
+                      </span>
+                      J'ai lu l'article et j'ai tout fait selon les instructions. 2h30 après mon premier dépôt — j'ai déjà 519 € sur le compte. Je vais maintenant essayer de retirer sur ma carte.
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        19
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/facebook-user-icon-4.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Invité
+                        </span>
+                        Hé ! Les paiements arrivent vraiment aussi vite ???
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          42
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/image10.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Mégane_N
+                        </span>
+                        Oui, tout s'est passé super bien — l'argent est arrivé sur la carte en environ 30 secondes. Tout simplement fantastique !
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          70
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/ava9.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Elofée
+                      </span>
+                      <span style="padding-right: 30px">
+                        Je vais partager mon expérience ! J'étais nerveuse et j'ai hésité longtemps... mais j'ai tenté le coup !
+                        <br>
+                        <a class="lightbox-img" href="./assets/comments/screen2.webp" data-fslightbox="comment2">
+                          <img src="./assets/comments/screen2.webp" style="max-width: 230px; width: 100%; height: auto; margin-top: 1rem;">
+                        </a>
+                      </span>
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        27
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/facebook-user-icon-4.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Invité
+                        </span>
+                        Oh, mon Dieu ! Merci énormément pour la capture d'écran - tu m'as inspirée. Waouh !
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          49
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image8.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Kelly_Ixelles
+                      </span>
+                      <span style="padding-right: 30px">
+                        Les politiciens aiment parler de « stabilité », mais les gens ordinaires vivent dans une toute autre réalité économique
+                      </span>
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        16
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image13.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Jules_Namur
+                      </span>
+                      C'est amusant de regarder ces imbéciles tenter d'arriver à la cheville des politiciens... mais ils n'y parviendront sans doute jamais
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        61
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/16.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Renard_129
+                        </span>
+                        lol, mec, cette info est pour ceux qui comprennent vraiment, pas pour toi.
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          24
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/facebook-user-icon-4.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Nicolas_V
+                        </span>
+                        si t'as peur de te faire avoir, laisse tomber et laisse les autres discuter
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          52
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/image13.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Jules_Namur
+                        </span>
+                        dégage, essaie toi-même avant de raconter des conneries
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          36
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/facebook-user-icon-4.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Nicolas_V
+                        </span>
+                        tout marche très bien, si tu t'y connais
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          65
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/image5.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Le Monde
+                        </span>
+                        Nous prions les participants à la discussion de s'abstenir d'utiliser un langage vulgaire.
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          31
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image9.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Éric_Petit
+                      </span>
+                      Bonne journée à tous ! ☀️
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        58
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/facebook-user-icon-4.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Clara_H
+                      </span>
+                      Je gagne ici depuis plusieurs mois et je suis encore sous le choc ! En moyenne je touche 3200 € par mois, et je ne suis pas du tout un professionnel…
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        21
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/9.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Ruby_Bruxelles
+                      </span>
+                      Quitter le studio… ce n’est clairement pas l’argument le plus solide dans un débat 🤷‍♂️
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        44
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/10.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        NomadeNumérique_Anvers
+                      </span>
+                      Fanny est toujours aussi perspicace qu’avant ! Elle ne lâche rien. C’est impressionnant de voir à quel point le gouvernement panique dès qu’on commence à parler de véritable indépendance financière 😏
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        11
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="./assets/comments/image11.webp" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        André_Dupont
+                      </span>
+                      Jan Jambon a raison, le crédit est le moteur de l’économie. Jandrain fait simplement du populisme avec ses « solutions miracles »
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        67
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/7.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          Antoine_Bernard
+                        </span>
+                        Le moteur de l’économie… ou le moteur de ta faillite ? 🤡
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          28
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                    <div class="fb-comment__answer">
+                      <img class="fb-comment__avatar" src="./assets/comments/facebook-user-icon-4.webp" alt="">
+                      <div class="fb-comment__text">
+                        <span class="fb-comment__author flux_cta">
+                          S_Gand
+                        </span>
+                        Ahah mec, tu vis vraiment dans quel monde ? Continue comme ça et reste dans la pauvreté en expliquant que les crédits sauvent tout le monde 😂
+                        <br>
+                        <div class="fb-comment__like">
+                          <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                          53
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-left: 38px">
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a>
+                      <span class="fb-comment__posted"><span data-time-function="timeAnswerHoursAgo"></span></span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="fb-comment__item">
+                  <img src="https://aio-tech.ams3.digitaloceanspaces.com/production/action-files/666/9e0534e9-1dbf-44d2-8d4a-f894aca8d0c2/2025-09-12/BgJkbqHh3h0w8lSeb5uHm5A4ACiv87UKrse8TkxI.webp?hash=297e1e653822db266938072c7ae2ea18" alt="" class="fb-comment__avatar flux_cta">
+                  <div class="fb-comment__content">
+                    <div class="fb-comment__text">
+                      <span class="fb-comment__author flux_cta">
+                        Marthe_Dubois
+                      </span>
+                      Jan Jambon, pourquoi partir comme ça ? Les documents de Jandrain vous font si peur ?  
+                      <div class="fb-comment__like">
+                        <a href="{{link}}" class="flux_cta"><img src="./assets/comments/like.webp" class="flux_cta"></a>
+                        40
+                      </div>
+                    </div>
+                    <div>
+                      <a class="fb-comment__react flux_cta" href="{{link}}">J`aime</a><a class="fb-comment__react flux_cta" href="{{link}}">Répondre</a><span class="fb-comment__posted"><span data-time-function="timeHoursAgo"></span></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- end comments -->
+
+              <!-- <button style="border: none; background-color: inherit" class="fb-comment__more" href="{{link}}">Afficher 2 autres commentaires</button> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <style>
+    #un-main p a,
+    .un-article__paragraph a,
+    .un-steps__paragraph a,
+    .un-article__callout a,
+    .fb-comment__text a,
+    .un-instruction__item span a {
+      color: #007fff;
+      text-decoration: underline;
+
+      &:hover {
+        color: #e11229;
+      }
+    }
+
+    .un-article__image {
+      background-color: inherit !important;
+    }
+
+    .flux_cta {
+      pointer-events: none;
+    }
+
+    .check {
+      font-size: 1.2rem;
+    }
+
+    .footer {
+      background-color: #2a303bde;
+    }
+
+    .zone--footer {
+      background-color: transparent;
+    }
+
+    .footer__bottom {
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .check-mobile_lcolumn p,
+    .check-mobile_rcolumn p {
+      font-family: "IBM Plex Mono", IBM Plex, monospace !important;
+    }
+
+    .un-article__callout {
+      font-style: italic;
+    }
+
+    @media (max-width: 1024px) {
+
+      .check-mobile_lcolumn p,
+      .check-mobile_rcolumn p {
+        font-size: 1.4rem;
+      }
+    }
+
+    @media (max-width: 580px) {
+
+      .check-mobile_lcolumn p,
+      .check-mobile_rcolumn p {
+        font-size: 1.1rem;
+      }
+
+      .check-mobile__date {
+        font-size: 1rem;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .fb-comment__text {
+        padding-right: 30px;
+      }
+    }
+
+    .swiper {
+      --swiper-theme-color: #026b9c;
+    }
+
+    .swiper-slide {
+      align-self: center;
+    }
+
+    .lightbox-img {
+      position: relative;
+      display: inline-block;
+      line-height: 0;
+    }
+
+    .lightbox-img::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 0.5;
+      width: 50px;
+      height: 50px;
+      background-image: url("https://aio-tech.ams3.digitaloceanspaces.com/production/landing-cdn/666/dd34a599-3388-423d-9594-9738752c225c/assets/img/lupa.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .reg__list {
+      counter-reset: none;
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+
+    .reg__item {
+      border: none;
+      background: none;
+      padding-left: 0;
+      display: list-item;
+      list-style-type: decimal;
+    }
+    .reg__item::before {
+      display: none;
+    }
+    .reg__item::marker {
+      font-weight: bold;
+    }
+  </style>
+
+
+</div>
+    </section>
+    <aside id="un-additional">
+      <div class="un-additional__wrapper">
+        <p class="un-additional__title">Les plus lus</p>
+        <ul class="un-additional__list">
+          <li class="un-additional__item">
+            <span class="un-additional__item-number">1</span>
+            <span class="un-additional__item-info">Les investissements protègent contre l'inflation, ce qui permet
+              à vos dépôts et à votre argent de rester en sécurité</span>
+          </li>
+          <li class="un-additional__item">
+            <span class="un-additional__item-number">2</span>
+            <span class="un-additional__item-info">Le chômage baisse de manière inattendue à 7,2 % et 14 000
+              emplois sont créés en ligne</span>
+          </li>
+          <li class="un-additional__item">
+            <span class="un-additional__item-number">3</span>
+            <span class="un-additional__item-info">L'investissement n'est pas réservé aux riches : pourquoi tout
+              le monde devrait penser à son avenir financier</span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+<footer class="footer footer--free">
+  <section class="zone zone--footer old__zone">
+    <section class="footer__bottom">
+      <img class="footer-logo" src="./assets/6e1311f12cb5fc601326a83396304e45984f6ec7.svg" alt="">
+      <p class="footer__title">
+        © <span data-time-function="timeYear"></span> Droits d'auteur. Tous
+        les droits sont réservés.
+      </p>
+    </section>
+  </section>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  function initSwiper(swiperNode) {
+    return new Swiper(swiperNode, {
+      loop: true,
+      followFinger: false,
+      pagination: {
+        el: swiperNode.querySelector(".swiper-pagination"),
+      },
+      navigation: {
+        nextEl: swiperNode.querySelector(".swiper-button-next"),
+        prevEl: swiperNode.querySelector(".swiper-button-prev"),
+      },
+    });
+  }
+  document.addEventListener("DOMContentLoaded", () =>
+          document.querySelectorAll(".swiper").forEach(initSwiper)
+  );
+</script>
+
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://aio-tech.ams3.digitaloceanspaces.com/production/landing-cdn/666/b55eb68a-d7f4-45f5-ba7c-0e3bb2cfe630/assets/js/time-scripts/main.js"></script>
+<script src="./assets/js/fslightbox.js"></script>
+
+{{aio:macros:currency_nowrap}}
+
+{{aio}}</body></html>

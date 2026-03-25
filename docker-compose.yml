@@ -1,0 +1,112 @@
+version: "3.9"
+
+name: autotest
+
+networks:
+  test-net:
+    name: test-net
+    driver: bridge
+
+volumes:
+  db_data:
+  rabbitmq_data:
+
+services:
+
+  db:
+    image: postgres:15-alpine
+    container_name: app-db
+    environment:
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: testpass
+      POSTGRES_DB: testresults
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - test-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U testuser -d testresults"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: app-rabbitmq
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - test-net
+    ports:
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  app:
+    build:
+      context: ./backend
+      dockerfile: docker/Dockerfile.app
+    container_name: app-api
+    volumes:
+      - ./backend/uploads:/root/uploads
+    depends_on:
+      db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - test-net
+    ports:
+      - "8080:8080"
+    environment:
+      DB_DSN: postgres://testuser:testpass@db:5432/testresults?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+
+  worker:
+    build:
+      context: ./backend
+      dockerfile: docker/Dockerfile.worker
+    container_name: app-worker
+    volumes:
+      - ./backend/uploads:/root/uploads
+      - ./backend/tmp:/root/tmp
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - test-net
+    environment:
+      DB_DSN: postgres://testuser:testpass@db:5432/testresults?sslmode=disable
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672/
+      # Абсолютный путь к tmp папке на HOST — используется для docker -v
+      HOST_TMP_PATH: /Users/aleksandr/Downloads/project_fixed/backend/tmp
+      # Передаём параметры БД в Cypress через worker → docker run
+      DB_HOST: db
+      DB_PORT: "5432"
+      DB_NAME: testresults
+      DB_USER: testuser
+      DB_PASSWORD: testpass
+
+  web-server-builder:
+    build:
+      context: ./web-server
+      dockerfile: Dockerfile
+    image: autotest-web-server
+    command: ["echo", "image built"]
+    profiles:
+      - build-only
+
+  cypress-runner-builder:
+    build:
+      context: ./cypress-runner
+      dockerfile: Dockerfile
+    image: autotest-cypress-runner
+    command: ["echo", "image built"]
+    profiles:
+      - build-only

@@ -1,0 +1,96 @@
+.logo__l-epoque,.logo__m-le-mag{
+    background-position:50%;
+    background-repeat:no-repeat;
+    background-size:contain;
+    display:inline-block;
+    flex-shrink:0;
+    text-indent:-99999px
+}
+.icon__apps,.icon__archive,.icon__connexion,.icon__facebook,.icon__instagram,.icon__journal,.icon__mail-footer,.icon__rss,.icon__snapchat,.icon__subscribe,.icon__twitter,.icon__youtube{
+    background-position:50%;
+    background-repeat:no-repeat;
+    background-size:contain;
+    display:inline-block;
+    flex-shrink:0;
+    height:2rem;
+    width:2rem
+}
+.icon--outside-simple{
+    float:left
+}
+.logo--full{
+    height:100%!important;
+    width:100%!important
+}
+.icon__instagram{
+    background-image:url("../assets/3f0c022fe83fbc4c16e2133b0acbaccb48ef964c.svg")
+}
+.icon__instagram:hover{
+    background-image:url("../assets/af0763fbd8d126344037237c502dc0271b07fe3e.svg")
+}
+.icon__instagram--footer{
+    margin-right:.4rem
+}
+.icon__instagram--footer,.icon__instagram--footer:hover{
+    background-image:url("../assets/a53340187eaecc6aab316b5821444d582889770b.svg")
+}
+.icon__snapchat{
+    background-image:url("../assets/6292ec13564611214e6874e405aab8628f97eea2.svg")
+}
+.icon__facebook{
+    background-image:url("../assets/1269c3cd5d6efbc5bc6f228ac1dc2ec3526490fd.svg");
+    height:2.4rem;
+    width:2.4rem
+}
+.icon__facebook--footer,.icon__facebook--footer:hover{
+    background-image:url("../assets/795aababe01079e187e733bae537e485569ad207.svg")
+}
+.icon__youtube{
+    background-image:url("../assets/492ed54f96ba6af5a28848caeccf95665573efab.svg")
+}
+.icon__twitter{
+    background-image:url("../assets/ef71f3f1660c257371c0a079e33a599d90ea24d7.svg");
+    height:2.4rem;
+    width:2.4rem
+}
+.icon__twitter--footer{
+    background-image:url("../assets/3e8e4a5fc26d68d9b31daf46f6261c975050e177.svg")
+}
+.icon__twitter--footer:hover{
+    background-image:url("../assets/6f6f94a22607bbfb11fcadfd46f419a7bd522a64.svg")
+}
+.icon__rss{
+    background-image:url("../assets/aa6fb47bd4ad6e905b0457aeb3e4320c6cbf583f.svg")
+}
+.icon__mail-footer{
+    background-image:url("../assets/330be2db3888394ccca4d4b3cfb7288716757d0e.svg")
+}
+.icon__journal{
+    background-image:url("../assets/628c5140edee5cc6e8876335cd7a52fb11693341.svg")
+}
+.icon__archive{
+    background-image:url("../assets/a47151d3542e8bed85ffd892c6ce6e9b68fda28c.svg")
+}
+.icon__subscribe{
+    background-image:url("../assets/16844cb9a79a7d731232c93d29831bdca69c5ae2.svg")
+}
+.icon__connexion{
+    background-image:url("../assets/330be2db3888394ccca4d4b3cfb7288716757d0e.svg")
+}
+.icon__apps{
+    background-image:url("../assets/fd3ba1d4e1f6f7f7a02444f57d1fd19c2e129d9d.svg")
+}
+.logo__m-le-mag{
+    background-image:url("../assets/bb8c2fea02e7772a808079172eee1db969313040.svg");
+    height:2.4rem;
+    width:10.3rem
+}
+.logo__m-le-mag--nav{
+    height:1.8rem;
+    width:8rem
+}
+.logo__l-epoque{
+    background-image:url("../assets/3986a554afd300f84df6cb1a34561027cd337179.svg");
+    height:2.4rem;
+    width:7.8rem
+}
